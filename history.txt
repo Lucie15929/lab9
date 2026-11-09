@@ -1,0 +1,31 @@
+  248  gh repo create "lab9" --public --confirm
+  249  ls 
+  250  gh clone Lucie15929/lab9
+  251  gh repo clone Lucie15929/lab9
+  252  cd lab9
+  253  nano validate-data.sh
+  254  bash validate-data.sh "pearse mccarthy" "0831122334"
+  255  bash validate-data.sh "pearse mccarthy" "08311223344"
+  256  bash validate-data.sh "pearse7 mccarthy" "0831122334"
+  257  gh issue create --repo "Lucie15929/lab9" --title "create yaml test script" --body "create yaml test script" --assignee "@me" --label "enhancement"
+  258  mkdir -p .github/workflows
+  259  nano .github/workflows/basictests.yml
+  260  git add .
+  261  git commit -m "Add validate-data script and github action basictests workflow"
+  262  git push origin main
+  263  git pull
+  264  git checkout -b test
+  265  ls
+  266  nano validate-data.sh 
+  267  git add .
+  268  git commit -m "changing the max name lengh to be 20"
+  269  git push
+  270  nano .github/workflows/basictests.yml
+  271  git add .
+  272  git commit -m " add test branch to github workflow"
+  273  git push
+  274  nano .github/workflows/basictests.yml
+  275  git add .
+  276  git commit -m "addapting the 3rd test to the max name lengh being 20"
+  277  git push
+  278  history>history.txt
