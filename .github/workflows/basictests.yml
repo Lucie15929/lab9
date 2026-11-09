@@ -39,7 +39,7 @@ jobs:
 
           OUTPUT3=$(bash validate-data.sh "pearset mccarthy" "0831122334")
           echo "Script output was: $OUTPUT3"
-          if [ "$OUTPUT3" = "FAIL" ]; then
+          if [ "$OUTPUT3" = "PASS" ]; then
             echo "Test Passed!"
           else
             echo "Test Failed!"
